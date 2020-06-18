@@ -1,0 +1,46 @@
+{
+    "name": "Encima/command-logger",
+    "description": "A tool that let's you log when commands have been run, and if they are successfull.",
+    "type": "library",
+    "require": {
+        "php": ">=7.2.0",
+        "swekaj/cron-expression-generator": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.8|^4.0|^5.0",
+        "phpunit/phpunit": "^8.0|^9.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Encima\\CommandLogger\\": "src/"
+        }
+
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Encima\\CommandLogger\\Tests\\": "tests/"
+        },
+        "files": [
+            "tests/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Einar-Johan Hansen",
+            "email": "einar@encima.io"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Encima\\CommandLogger\\CommandLoggerServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
