@@ -1,6 +1,6 @@
 {
-    "name": "Encima/command-logger",
-    "description": "A tool that let's you log when commands have been run, and if they are successfull.",
+    "name": "encima-io/command-logger",
+    "description": "A tool that let's you log when console commands have been run, and if they have been successful.",
     "type": "library",
     "require": {
         "php": ">=7.2.0",
