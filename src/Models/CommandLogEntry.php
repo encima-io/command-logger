@@ -51,7 +51,7 @@ class CommandLogEntry extends Model
         if ($this->runtime) {
             $string = CarbonInterval::fromString(
                 $this->runtime->format('%yy %mmo %dd %hh %im %ss')
-            )->forHumans();
+            )->cascade()->forHumans();
 
             if ($string == '') {
                 return '0 sekunder';
